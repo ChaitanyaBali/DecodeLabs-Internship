@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Personal Learning Platform for tracking learning progress, developing skills, and following a personalized learning roadmap."
+  >
+
+  <title>Personal Learning Platform</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Skip link for accessibility -->
+  <a href="#main-content" class="skip-link">
+    Skip to main content
+  </a>
+
+
+  <!-- ================= HEADER ================= -->
+ <header class="site-header">
+  <div class="container header-content">
+
+    <a
+      href="#dashboard"
+      class="logo"
+      aria-label="Personal Learning Platform home"
+    >
+      <span class="logo-icon" aria-hidden="true">PL</span>
+      <span class="logo-text">Personal Learning</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li>
+          <a href="#dashboard" class="nav-link active">
+            Dashboard
+          </a>
+        </li>
+
+        <li>
+          <a href="#my-learning" class="nav-link">
+            My Learning
+          </a>
+        </li>
+
+        <li>
+          <a href="#recommendations" class="nav-link">
+            Recommendations
+          </a>
+        </li>
+
+        <li>
+          <a href="#skills" class="nav-link">
+            Skills
+          </a>
+        </li>
+
+        <li>
+          <a href="#practice" class="nav-link">
+            Practice
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+
+  <main id="main-content">
+
+    <!-- ================= HERO / DASHBOARD ================= -->
+    <section
+      id="dashboard"
+      class="hero-section"
+      aria-labelledby="dashboard-title"
+    >
+      <div class="container">
+
+        <div class="hero-content">
+
+          <div class="hero-main">
+
+            <p class="eyebrow">
+              PERSONALIZED LEARNING
+            </p>
+
+            <h1 id="dashboard-title">
+              Learn at your own pace.
+            </h1>
+
+            <p class="hero-desc">
+              Your learning path adapts to your speed, strengths, and goals.
+              Track progress, practice skills, and stay on course.
+            </p>
+
+          </div>
+
+
+          <article class="goal-card">
+
+            <p class="card-label">
+              CURRENT LEARNING GOAL
+            </p>
+
+            <h2>
+              Become a Full Stack Developer
+            </h2>
+
+            <div class="progress-info">
+              <span>Overall progress</span>
+              <strong>68%</strong>
+            </div>
+
+            <div
+              class="progress-bar"
+              role="progressbar"
+              aria-label="Overall learning progress"
+              aria-valuenow="68"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <span style="width: 68%"></span>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= LEARNING OVERVIEW ================= -->
+    <section
+      class="section"
+      aria-labelledby="overview-title"
+    >
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">
+            YOUR PROGRESS
+          </p>
+
+          <h2 id="overview-title">
+            Learning Overview
+          </h2>
+
+        </div>
+
+
+        <div class="learning-overview">
+
+          <article class="stat-card">
+            <span class="stat-number">68%</span>
+            <h3>Overall Progress</h3>
+            <p>Learning journey completed</p>
+          </article>
+
+
+          <article class="stat-card">
+            <span class="stat-number">4 / 6</span>
+            <h3>Courses Completed</h3>
+            <p>Courses successfully finished</p>
+          </article>
+
+
+          <article class="stat-card">
+            <span class="stat-number">2</span>
+            <h3>Current Courses</h3>
+            <p>Courses currently in progress</p>
+          </article>
+
+
+          <article class="stat-card">
+            <span class="stat-number">12</span>
+            <h3>Learning Streak</h3>
+            <p>Days of continuous learning</p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= MY LEARNING ================= -->
+    <section
+      id="my-learning"
+      class="section section-alt"
+      aria-labelledby="my-learning-title"
+    >
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">
+            CONTINUE LEARNING
+          </p>
+
+          <h2 id="my-learning-title">
+            My Learning
+          </h2>
+
+          <p>
+            Continue with the courses you are currently working on.
+          </p>
+
+        </div>
+
+
+        <div class="course-grid">
+
+          <article class="course-card">
+
+            <div
+              class="course-icon"
+              aria-hidden="true"
+            >
+              JS
+            </div>
+
+            <div class="course-content">
+
+              <span class="difficulty">
+                Intermediate
+              </span>
+
+              <h3>
+                JavaScript Fundamentals
+              </h3>
+
+              <p class="course-desc">
+                Core concepts: variables, functions, DOM, and events.
+              </p>
+
+              <div class="progress-info">
+                <span>Progress</span>
+                <strong>72%</strong>
+              </div>
+
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-label="JavaScript Fundamentals progress"
+                aria-valuenow="72"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <span style="width: 72%"></span>
+              </div>
+
+              <button
+                type="button"
+                class="btn primary-btn continue-btn"
+              >
+                Continue Learning
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <article class="course-card">
+
+            <div
+              class="course-icon"
+              aria-hidden="true"
+            >
+              CSS
+            </div>
+
+            <div class="course-content">
+
+              <span class="difficulty">
+                Intermediate
+              </span>
+
+              <h3>
+                Responsive Web Design
+              </h3>
+
+              <p class="course-desc">
+                Fluid grids, Flexbox, media queries, and Container Queries.
+              </p>
+
+              <div class="progress-info">
+                <span>Progress</span>
+                <strong>54%</strong>
+              </div>
+
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-label="Responsive Web Design progress"
+                aria-valuenow="54"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <span style="width: 54%"></span>
+              </div>
+
+              <button
+                type="button"
+                class="btn primary-btn continue-btn"
+              >
+                Continue Learning
+              </button>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= RECOMMENDATIONS ================= -->
+    <section
+      id="recommendations"
+      class="section"
+      aria-labelledby="rec-title"
+    >
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">
+            PERSONALIZED FOR YOU
+          </p>
+
+          <h2 id="rec-title">
+            Personalized Recommendations
+          </h2>
+
+          <p>
+            Topics selected based on your current learning progress
+            and skill development.
+          </p>
+
+        </div>
+
+
+        <div class="rec-grid">
+
+          <article class="rec-card">
+
+            <span class="rec-number">
+              01
+            </span>
+
+            <span class="rec-badge">
+              Recommended
+            </span>
+
+            <h3>
+              JavaScript Functions
+            </h3>
+
+            <p class="rec-desc">
+              Master higher-order functions, closures, and scope
+              to write cleaner code.
+            </p>
+
+            <button
+              type="button"
+              class="btn secondary-btn start-rec-btn"
+            >
+              Start Learning
+            </button>
+
+          </article>
+
+
+          <article class="rec-card">
+
+            <span class="rec-number">
+              02
+            </span>
+
+            <span class="rec-badge">
+              Skill Gap
+            </span>
+
+            <h3>
+              CSS Grid Layout
+            </h3>
+
+            <p class="rec-desc">
+              Build complex, responsive layouts with ease using CSS Grid.
+            </p>
+
+            <button
+              type="button"
+              class="btn secondary-btn start-rec-btn"
+            >
+              Start Learning
+            </button>
+
+          </article>
+
+
+          <article class="rec-card">
+
+            <span class="rec-number">
+              03
+            </span>
+
+            <span class="rec-badge">
+              Next Step
+            </span>
+
+            <h3>
+              Git &amp; GitHub Basics
+            </h3>
+
+            <p class="rec-desc">
+              Version control, branching, and collaboration
+              for your projects.
+            </p>
+
+            <button
+              type="button"
+              class="btn secondary-btn start-rec-btn"
+            >
+              Start Learning
+            </button>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+    <section
+      id="skills"
+      class="section section-alt"
+      aria-labelledby="skills-title"
+    >
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">
+            SKILL DEVELOPMENT
+          </p>
+
+          <h2 id="skills-title">
+            My Skills
+          </h2>
+
+          <p>
+            Monitor your strengths and identify areas for improvement.
+          </p>
+
+        </div>
+
+
+        <div class="skills-list">
+
+          <article class="skill-item">
+
+            <div class="skill-heading">
+
+              <div>
+                <h3>HTML</h3>
+                <span>Advanced</span>
+              </div>
+
+              <strong>90%</strong>
+
+            </div>
+
+            <div
+              class="skill-progress"
+              role="progressbar"
+              aria-label="HTML skill level"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <span style="width: 90%"></span>
+            </div>
+
+          </article>
+
+
+          <article class="skill-item">
+
+            <div class="skill-heading">
+
+              <div>
+                <h3>CSS</h3>
+                <span>Intermediate</span>
+              </div>
+
+              <strong>72%</strong>
+
+            </div>
+
+            <div
+              class="skill-progress"
+              role="progressbar"
+              aria-label="CSS skill level"
+              aria-valuenow="72"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <span style="width: 72%"></span>
+            </div>
+
+          </article>
+
+
+          <article class="skill-item">
+
+            <div class="skill-heading">
+
+              <div>
+                <h3>JavaScript</h3>
+                <span>Intermediate</span>
+              </div>
+
+              <strong>65%</strong>
+
+            </div>
+
+            <div
+              class="skill-progress"
+              role="progressbar"
+              aria-label="JavaScript skill level"
+              aria-valuenow="65"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <span style="width: 65%"></span>
+            </div>
+
+          </article>
+
+
+          <article class="skill-item">
+
+            <div class="skill-heading">
+
+              <div>
+                <h3>Responsive Design</h3>
+                <span>Intermediate</span>
+              </div>
+
+              <strong>70%</strong>
+
+            </div>
+
+            <div
+              class="skill-progress"
+              role="progressbar"
+              aria-label="Responsive Design skill level"
+              aria-valuenow="70"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <span style="width: 70%"></span>
+            </div>
+
+          </article>
+
+
+          <article class="skill-item">
+
+            <div class="skill-heading">
+
+              <div>
+                <h3>Git</h3>
+                <span>Beginner</span>
+              </div>
+
+              <strong>45%</strong>
+
+            </div>
+
+            <div
+              class="skill-progress"
+              role="progressbar"
+              aria-label="Git skill level"
+              aria-valuenow="45"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <span style="width: 45%"></span>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= PRACTICE ================= -->
+    <section
+      id="practice"
+      class="section"
+      aria-labelledby="practice-title"
+    >
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">
+            PRACTICE
+          </p>
+
+          <h2 id="practice-title">
+            Practice Your Skills
+          </h2>
+
+          <p>
+            Reinforce your understanding through focused practice.
+          </p>
+
+        </div>
+
+
+        <div class="practice-grid">
+
+          <article class="practice-card">
+
+            <div
+              class="practice-icon"
+              aria-hidden="true"
+            >
+              HTML
+            </div>
+
+            <h3>
+              HTML Basics
+            </h3>
+
+            <p>
+              Practice semantic structure, forms, and accessibility.
+            </p>
+
+            <button
+              type="button"
+              class="btn primary-btn practice-btn"
+            >
+              Begin Practice
+            </button>
+
+          </article>
+
+
+          <article class="practice-card">
+
+            <div
+              class="practice-icon"
+              aria-hidden="true"
+            >
+              CSS
+            </div>
+
+            <h3>
+              CSS Layout
+            </h3>
+
+            <p>
+              Practice Flexbox, Grid, and responsive techniques.
+            </p>
+
+            <button
+              type="button"
+              class="btn primary-btn practice-btn"
+            >
+              Begin Practice
+            </button>
+
+          </article>
+
+
+          <article class="practice-card">
+
+            <div
+              class="practice-icon"
+              aria-hidden="true"
+            >
+              JS
+            </div>
+
+            <h3>
+              JavaScript
+            </h3>
+
+            <p>
+              Practice DOM manipulation, events, and basic algorithms.
+            </p>
+
+            <button
+              type="button"
+              class="btn primary-btn practice-btn"
+            >
+              Begin Practice
+            </button>
+
+          </article>
+
+        </div>
+
+
+        <p
+          id="interaction-message"
+          class="interaction-message"
+          aria-live="polite"
+        ></p>
+
+      </div>
+    </section>
+
+
+    <!-- ================= LEARNING ROADMAP ================= -->
+    <section
+      class="section section-alt roadmap"
+      aria-labelledby="roadmap-title"
+    >
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">
+            YOUR LEARNING PATH
+          </p>
+
+          <h2 id="roadmap-title">
+            Learning Roadmap
+          </h2>
+
+          <p>
+            Follow a structured path from fundamentals
+            to full stack development.
+          </p>
+
+        </div>
+
+
+        <div class="roadmap-steps">
+
+          <article class="step completed">
+            <span class="step-number">01</span>
+            <h3>HTML</h3>
+            <p>Completed</p>
+          </article>
+
+
+          <article class="step completed">
+            <span class="step-number">02</span>
+            <h3>CSS</h3>
+            <p>Completed</p>
+          </article>
+
+
+          <article class="step current">
+            <span class="step-number">03</span>
+            <h3>JavaScript</h3>
+            <p>Current</p>
+          </article>
+
+
+          <article class="step upcoming">
+            <span class="step-number">04</span>
+            <h3>Git &amp; GitHub</h3>
+            <p>Upcoming</p>
+          </article>
+
+
+          <article class="step upcoming">
+            <span class="step-number">05</span>
+            <h3>Full Stack Basics</h3>
+            <p>Upcoming</p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+  <div class="container footer-content">
+
+    <div>
+      <h2>Personal Learning Platform</h2>
+      <p>Adaptive learning for every student.</p>
+    </div>
+
+    <p class="copyright">
+      &copy; 2026 Personal Learning Platform
+    </p>
+
+  </div>
+</footer>
+
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
